@@ -1,6 +1,31 @@
-<nav id="navbar">
-  <a href="" id="brand">
-    <img src="/img/logo.svg" alt="">
-    <span>xatal</span>
-  </a>
-</nav>
+<div id="nav-wrapper" class="{% if soloPage %}active{% endif %}">
+  <nav id="navbar" class="flex items-center justify-between">
+    <a href="" id="brand" class="flex-center">
+      <img src="/img/logo.svg" alt="">
+      <span>xatal</span>
+    </a>
+    <ul id="nav-list" class="flex items-center">
+      <li>
+        <a href="/" class="nav-link active">Inicio</a>
+      </li>
+      <li>
+        <a href="" class="nav-link">Servicios</a>
+      </li>
+      <li>
+        <a href="" class="nav-link">Clientes</a>
+      </li>
+      <li>
+        <a href="" class="nav-link">Nosotros</a>
+      </li>
+      <li>
+        <a href="" class="nav-link">Blog</a>
+      </li>
+      <li>
+        <a href="" class="nav-link">Contacto</a>
+      </li>
+      <li>
+        <a href="" class="nav-link" id="btn-cotizar">Cotizar</a>
+      </li>
+    </ul>
+  </nav>
+</div>

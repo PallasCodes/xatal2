@@ -4,20 +4,385 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Xatal - Diseño y desarrollo web para empresas y profesionistas</title>
+    <!-- styles -->
     <link rel="stylesheet" href="/css/styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
   <body>
-    <nav id="navbar">
-  <a href="" id="brand">
-    <img src="/img/logo.svg" alt="">
-    <span>xatal</span>
-  </a>
-</nav>
+    <div id="nav-wrapper" class="">
+  <nav id="navbar" class="flex items-center justify-between">
+    <a href="" id="brand" class="flex-center">
+      <img src="/img/logo.svg" alt="">
+      <span>xatal</span>
+    </a>
+    <ul id="nav-list" class="flex items-center">
+      <li>
+        <a href="/" class="nav-link active">Inicio</a>
+      </li>
+      <li>
+        <a href="" class="nav-link">Servicios</a>
+      </li>
+      <li>
+        <a href="" class="nav-link">Clientes</a>
+      </li>
+      <li>
+        <a href="" class="nav-link">Nosotros</a>
+      </li>
+      <li>
+        <a href="" class="nav-link">Blog</a>
+      </li>
+      <li>
+        <a href="" class="nav-link">Contacto</a>
+      </li>
+      <li>
+        <a href="" class="nav-link" id="btn-cotizar">Cotizar</a>
+      </li>
+    </ul>
+  </nav>
+</div>
 
-    <main>
+    <main class="">
       
-<h1>Hello, World!</h1>
+<!-- Hero -->
+<header id="hero" class="flex-center">
+  <section id="copy" class="container text-center">
+    <h1>Pon tu negocio al <br class="mobile-hidden"> alcance de todos</h1>
+    <h3>Nosotros lo llevamos al internet</h3>
+    <div class="flex-center">
+      <a href="" id="btn-cta">Cotizar</a>
+      <a href="#services" id="btn-cta-secondary">
+        <span>Más información</span>
+        <i class="bx bx-info-circle"></i>
+      </a>
+    </div>
+  </section>
+  <a href="#services" id="arrow-wrapper" class="flex-center">
+    <svg xmlns="http://www.w3.org/2000/svg" class="upDown" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+    </svg>
+  </a>
+</header>
+<!-- end Hero -->
+
+<!-- Features -->
+<section id="services" class="container">
+  <h2 class="section-title">Construimos soluciones a tu medida</h2>
+  <ul class="responsive-3-grid" id="services-list">
+    <li class="card" data-aos="fade-up" data-aos-duration="800" data-aos-easing="linear">
+      <svg xmlns="http://www.w3.org/2000/svg" class="service-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+      </svg>
+      <h4>Diseño y desarrollo de páginas web</h4>
+      <ul>
+        <li>Genera mayor confianza y profesionalismo con tus clientes</li>
+        <li>Gestiona el contenido de tu página tú mismo</li>
+        <li>Diseño adaptable a dispositivos móviles</li>
+        <li>Código QR de regalo</li>
+      </ul>
+      <a href="/servicios/desarrollo-web/" class="more-info flex-center">
+        <span>Más información</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="more-info-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </li>
+    <li class="card" data-aos="fade-up" data-aos-duration="800" data-aos-easing="linear">
+      <svg xmlns="http://www.w3.org/2000/svg" class="service-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+      </svg>
+      <h4>Tiendas en línea (e-commerce)</h4>
+      <ul>
+        <li>Vende a cualquier parte del mundo</li>
+        <li>Control de inventario</li>
+        <li>Gestiona tu tienda tú mismo</li>
+        <li>Diseño adaptable a dispositivos móviles</li>
+        <li>Código QR de regalo</li>
+      </ul>
+      <a href="/servicios/e-commerce/" class="more-info flex-center">
+        <span>Más información</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="more-info-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </li>
+    <li class="card" data-aos="fade-up" data-aos-duration="800" data-aos-easing="linear">
+      <svg xmlns="http://www.w3.org/2000/svg" class="service-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+      </svg>
+      <h4>Sistemas web administrativos</h4>
+      <ul>
+        <li>Optimiza el flujo de trabajo de tu negocio</li>
+        <li>CRM (Client Relationship Management)</li>
+        <li>Automatiza procesos </li>
+        <li>Gestiona tu negocio desde cualquier lugar en cualquier dispositivo</li>
+      </ul>
+      <a href="/servicios/sistemas-administrativos/" class="more-info flex-center">
+        <span>Más información</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="more-info-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</section>
+<!-- end Services -->
+
+<!-- Testimonisl -->
+<section id="testimonials">
+  <div class="container">
+    <h2 class="section-title">Qué piensan nuestros clientes</h2>
+    <ul class="responsive-3-grid">
+      <li class="card">
+        <span class="quote">
+          <i class='bx bxs-quote-left'></i>
+        </span>
+        <div class="testimonial-img">
+          <img src="https://www.xatalweb.com/static/assets/img/testimonials/jorge.jpg" alt="" class="object-cover">
+        </div>
+        <span>
+            Xatal me facilitó el que me conocieran mejor posibles clientes, haciéndoles más amigable navegar en
+                  una página automotriz. A pesar de que mi marca tiene una página corporativa, en la mía los clientes
+                  experimentan el sentirse atendidos por un asesor desde el primer contacto.
+        </span>
+        <h4 class="testimonial-author">Jorge Torres</h4>
+        <span class="testimonial-role">Vendedor Chevrolet</span>
+      </li>
+      <li class="card">
+        <span class="quote">
+          <i class='bx bxs-quote-left'></i>
+        </span>
+        <div class="testimonial-img">
+          <img src="https://www.xatalweb.com/static/assets/img/testimonials/logo.png" alt="" class="object-cover">
+        </div>
+        <span>
+           Teníamos muchas dudas sobre hacer una página web, por suerte Xatal nos fue de gran ayuda, ya que nos
+                  resolvieron dudas en todo momento y nos hicieron una página con un gran diseño a un buen precio.
+        </span>
+        <h4 class="testimonial-author">Vintage</h4>
+        <span class="testimonial-role">Grupo de Rock</span>
+      </li>
+      <li class="card">
+        <span class="quote">
+          <i class='bx bxs-quote-left'></i>
+        </span>
+        <div class="testimonial-img">
+          <img src="https://www.xatalweb.com/static/assets/img/testimonials/default.svg" alt="" class="object-cover">
+        </div>
+        <span>
+              Necesitaba una página para poder dar más información sobre mi negocio, ya que una página en Facebook
+                  no me permitía mostrar toda la información necesaria. Xatal me hizo una página en menos de una semana.
+                  Se los recomiendo.
+        </span>
+        <h4 class="testimonial-author">Luis Vera</h4>
+        <span class="testimonial-role">Dueño de Salón de Eventos</span>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- end Testimonials -->
+
+<!-- Portfolio  -->
+<section id="portfolio" class="container">
+  <h2 class="section-title">Proyectos que hemos realizado</h2>
+  <ul class="responsive-3-grid">
+    <li class="project">
+      <a href="">
+        <img src="https://www.xatalweb.com/static/assets/img/portfolio/vintage.png" alt="" class="object-cover">
+        <span class="more-info">Más información</span>
+      </a>
+    </li>
+    <li class="project">
+      <a href="">
+        <img src="https://www.xatalweb.com/static/assets/img/portfolio/chevrolet.png" alt="" class="object-cover">
+        <span class="more-info">Más información</span>
+      </a>
+    </li>
+    <li class="project">
+      <a href="">
+        <img src="https://www.xatalweb.com/static/assets/img/portfolio/hipocampus.png" alt="" class="object-cover">
+        <span class="more-info">Más información</span>
+      </a>
+    </li>
+    <li class="project">
+      <a href="">
+        <img src="https://www.xatalweb.com/static/assets/img/portfolio/amigos.png" alt="" class="object-cover">
+        <span class="more-info">Más información</span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<!-- CTA -->
+<section id="cta" class="text-center">
+  <div class="container">
+    <h2>¿Dudas?</h2>
+    <h3>
+    Consulta nuestra sección de <a href="/preguntas-frecuentes/">preguntas frecuentes</a>  
+    o envíanos un mensaje directo <a href="/contacto/">aquí</a>.
+  </h3>
+  </div>
+</section>
+
+<!-- Blogposts -->
+<section id="blogposts" class="container">
+  <h2 class="section-title">Artículos recientes</h2>
+  <ul class="responsive-3-grid">
+    <li class="card">
+      <div class="post-img">
+        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80" alt="" class="object-cover">
+      </div>
+      <div class="post-body">
+        <span class="post-tag">Diseño web</span>
+        <span class="post-tag">Emprendimiento</span>
+        <h4>Importancia del diseño responsive</h4>
+        <div class="post-text">
+              Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem...
+        </div>
+        <a href="" class="read-more">
+          <span>Continuar leyendo</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="more-info-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"/>
+          </svg>
+        </svg>
+      </a>
+    </div>
+  </li>
+  <li class="card">
+    <div class="post-img">
+      <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80" alt="" class="object-cover">
+    </div>
+    <div class="post-body">
+      <span class="post-tag">Diseño web</span>
+      <span class="post-tag">Emprendimiento</span>
+      <h4>Importancia del diseño responsive</h4>
+      <div class="post-text">
+              Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem...
+      </div>
+      <a href="" class="read-more">
+        <span>Continuar leyendo</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="more-info-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </li>
+  <li class="card">
+    <div class="post-img">
+      <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80" alt="" class="object-cover">
+    </div>
+    <div class="post-body">
+      <span class="post-tag">Diseño web</span>
+      <span class="post-tag">Emprendimiento</span>
+      <h4>Importancia del diseño responsive</h4>
+      <div class="post-text">
+              Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem...
+        </div>
+      <a href="" class="read-more">
+        <span>Continuar leyendo</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="more-info-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </li>
+</ul>
+</section>
+
+<script>
+const navbar = document.getElementById('nav-wrapper')
+
+function toggleNavbar() {
+  if (window.scrollY > 100) {
+    navbar
+      .classList
+      .add('active')
+  } else {
+    navbar
+      .classList
+      .remove('active')
+  }
+}
+
+window.addEventListener('scroll', () => {
+  toggleNavbar()
+})
+
+toggleNavbar()
+</script>
     </main>
+
+    <footer id="footer">
+  <div class="wrapper">
+    <section id="footer-top">
+      <div class="col" id="footer-brand">
+        <a href="" id="brand" class="flex-center">
+          <img src="/img/logo.svg" alt="">
+          <span>xatal</span>
+        </a>
+        <span id="quote">
+          Diseño y desarrollo web para negocios y profesionistas.
+        </span>
+      </div>
+      <div class="col">
+        <h5>Contáctanos</h5>
+        <span class="col-line">
+          <i class='bx bxl-facebook-circle'></i>
+          <a href="" target="_blank">facebook.com/xatalweb</a>
+        </span>
+        <span class="col-line">
+          <i class='bx bxl-whatsapp'></i>
+          <a href="" target="_blank">+55 6900 2357</a>
+        </span>
+        <span class="col-line">
+          <i class='bx bx-envelope'></i>
+          <a href="" target="_blank">xatalweb@gmail.com</a>
+        </span>
+      </div>
+      <div class="col">
+        <h5>Énlaces Útiles</h5>
+        <span class="col-line">
+          <a href="" target="_blank">Blog</a>
+        </span>
+        <span class="col-line">
+          <a href="" target="_blank">Preguntas frecuentes</a>
+        </span>
+        <span class="col-line">
+          <a href="" target="_blank">Cotizar en línea</a>
+        </span>
+        <span class="col-line">
+          <a href="" target="_blank">Servicios</a>
+        </span>
+      </div>
+      <div class="col">
+        <h5>Nuestros Servicios</h5>
+        <span class="col-line">
+          <a href="" target="_blank">Diseño y desarrollo web</a>
+        </span>
+        <span class="col-line">
+          <a href="" target="_blank">Tiendas en línea (e-commerce)</a>
+        </span>
+        <span class="col-line">
+          <a href="" target="_blank">sistemas web administrativos</a>
+        </span>
+      </div>
+    </section>
+    <div id="footer-bot">
+    © Copyright 2021 - Xatal 
+  </div>
+  </div>
+</footer>
+
+    <!-- scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="/app.js"></script>
   </body>
 </html>

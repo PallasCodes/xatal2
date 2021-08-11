@@ -1,1 +1,13 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "config";
+@import "helpers";
+@import "animations";
 
+@import "sections/navbar";
+@import "sections/footer";
+@import "sections/cta";
+
+@import "pages/homepage";
+@import "pages/service";
