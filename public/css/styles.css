@@ -424,7 +424,8 @@ main.soloPage {
 
 #btn-close {
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: end;
 }
 
 #footer {
@@ -470,13 +471,13 @@ main.soloPage {
 }
 #footer-top .col-line {
   display: block;
-  font-size: 1rem;
+  font-size: 0.9rem;
   display: flex;
   align-items: center;
-  margin-bottom: 0.125rem;
+  margin-bottom: 0.25rem;
 }
 #footer-top .col-line i {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-right: 0.3rem;
 }
 #footer-top .col-line a {
