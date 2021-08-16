@@ -6,6 +6,10 @@
   &-brand {
     grid-column: 1 / span 2;
 
+    @include breakpoint-down(small) {
+      grid-column: 1;
+    }
+
     #brand {
       justify-content: flex-start;
     }
@@ -25,6 +29,10 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
+
+    @include breakpoint-down(small) {
+      grid-template-columns: repeat(1, 1fr);
+    }
 
     .col {
       h5 {

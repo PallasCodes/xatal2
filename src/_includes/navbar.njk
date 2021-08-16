@@ -1,31 +1,85 @@
 <div id="nav-wrapper" class="{% if soloPage %}active{% endif %}">
   <nav id="navbar" class="flex items-center justify-between">
-    <a href="" id="brand" class="flex-center">
+    <a href="/" id="brand" class="flex-center">
       <img src="/img/logo.svg" alt="">
       <span>xatal</span>
     </a>
-    <ul id="nav-list" class="flex items-center">
+    <ul id="nav-list" class="flex items-center mobile-hidden">
       <li>
-        <a href="/" class="nav-link active">Inicio</a>
+        <a href="/" class="nav-link {% if navActive == 'inicio' %} active {% endif %}">Inicio</a>
+      </li>
+      <li class="flex-center dropdown">
+        <a href="#" class="nav-link {% if navActive == 'servicio' %} active {% endif %}">
+          <span>Servicios</span>
+          <svg xmlns="http://www.w3.org/2000/svg" id="dropdown-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="/servicios/desarrollo-web" class="nav-link">Diseño y desarrollo web</a>
+          </li>
+          <li>
+            <a href="/servicios/tiendas-online" class="nav-link">Tiendas online</a>
+          </li>
+          <li>
+            <a href="/servicios/sistemas-administrativos" class="nav-link">Sistemas administrativos</a>
+          </li>
+        </ul>
       </li>
       <li>
-        <a href="" class="nav-link">Servicios</a>
+        <a href="/clientes/" class="nav-link {% if navActive == 'clientes' %} active {% endif %}">Clientes</a>
       </li>
       <li>
-        <a href="" class="nav-link">Clientes</a>
+        <a href="/nosotros/" class="nav-link {% if navActive == 'nosotros' %} active {% endif %}">Nosotros</a>
       </li>
+      {# <li>
+        <a href="" class="nav-link {% if navActive == 'blog' %} active {% endif %}">Blog</a>
+      </li> #}
       <li>
-        <a href="" class="nav-link">Nosotros</a>
+        <a href="" class="nav-link {% if navActive == 'contacto' %} active {% endif %}">Contacto</a>
       </li>
-      <li>
-        <a href="" class="nav-link">Blog</a>
-      </li>
-      <li>
-        <a href="" class="nav-link">Contacto</a>
-      </li>
-      <li>
+      {# <li>
         <a href="" class="nav-link" id="btn-cotizar">Cotizar</a>
-      </li>
+      </li> #}
     </ul>
+    <i class='bx bx-menu' id="btn-burguer"></i>
   </nav>
 </div>
+
+<nav id="mobile-nav">
+  <ul id="mobile-nav-list" class="flex items-center">
+      <li>
+        <a href="/" class="nav-link {% if navActive == 'inicio' %} active {% endif %}">Inicio</a>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="nav-link {% if navActive == 'servicio' %} active {% endif %}">Servicios</a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="/servicios/desarrollo-web" class="nav-link">Diseño y desarrollo web</a>
+          </li>
+          <li>
+            <a href="/servicios/tiendas-online" class="nav-link">Tiendas online</a>
+          </li>
+          <li>
+            <a href="/servicios/sistemas-administrativos" class="nav-link">Sistemas administrativos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/clientes/" class="nav-link {% if navActive == 'clientes' %} active {% endif %}">Clientes</a>
+      </li>
+      <li>
+        <a href="/nosotros/" class="nav-link {% if navActive == 'nosotros' %} active {% endif %}">Nosotros</a>
+      </li>
+      {# <li>
+        <a href="" class="nav-link {% if navActive == 'blog' %} active {% endif %}">Blog</a>
+      </li> #}
+      <li>
+        <a href="" class="nav-link {% if navActive == 'contacto' %} active {% endif %}">Contacto</a>
+      </li>
+      {# <li>
+        <a href="" class="nav-link" id="btn-cotizar">Cotizar</a>
+      </li> #}
+    </ul>
+</nav>

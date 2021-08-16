@@ -18,8 +18,74 @@
   }
 }
 
+.service-faq {
+  .section-title {
+    grid-column: 1 / span 2;
+    margin-bottom: 0;
+  }
+}
+
 .service-description {
   padding-bottom: 2rem;
   padding-top: 2rem;
   gap: 2rem;
+
+  &_text {
+    p {
+      margin-bottom: 0;
+    }
+  
+    h4 {
+      font-weight: 600;
+      color: $darkGray;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.service-process {
+  background: $darkBlue;
+  color: #e1e1e1;
+  
+  .responsive-3-grid {
+    gap: 2rem;
+  }
+
+  .section-title {
+    color: #f1f1f1;
+  }
+
+  .step-header {
+    color: #f1f1f1;
+
+    .step-number {
+      font-weight: 700;
+      font-size: 2.5rem;
+      background: $primary;
+      padding: 0 0.6rem;
+      margin-right: 0.25rem;
+      
+    }
+
+    h4 {
+      display: inline-block;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
+
+  li ul {
+    margin-top: 0.5rem;
+    list-style: square;
+    margin-left: 1rem;
+  }
+}
+
+.service-tech {
+  .tech-list {
+
+    li {
+      margin-right: 1.5rem;
+    }
+  }
 }

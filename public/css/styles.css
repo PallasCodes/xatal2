@@ -170,15 +170,24 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+@media (max-width: 39.9375em) {
+  .responsive-3-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 .responsive-2-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+@media (max-width: 39.9375em) {
+  .responsive-2-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 main.soloPage {
   margin-top: 3.5rem;
-  padding-bottom: 2rem;
 }
 
 .container {
@@ -193,6 +202,11 @@ main.soloPage {
   letter-spacing: 0.04em;
   text-align: center;
   color: #111;
+}
+@media (max-width: 39.9375em) {
+  .section-title {
+    font-size: 1.5rem;
+  }
 }
 .section-title::after {
   content: "";
@@ -211,6 +225,11 @@ main.soloPage {
   .mobile-hidden {
     display: none;
   }
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
 }
 
 .card {
@@ -275,6 +294,46 @@ main.soloPage {
 #navbar {
   padding: 0.75rem 1.25rem;
 }
+#navbar #btn-burguer {
+  display: block;
+  color: #f1f1f1;
+  font-size: 2rem;
+}
+#navbar #nav-list #dropdown-icon {
+  margin-left: 0.25rem;
+  width: 1.125rem;
+  color: #f1f1f1;
+}
+#navbar #nav-list .dropdown {
+  position: relative;
+}
+#navbar #nav-list .dropdown:hover .dropdown-menu {
+  display: block;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.12);
+}
+#navbar #nav-list .dropdown:hover #dropdown-icon {
+  color: #629dff;
+}
+#navbar #nav-list .dropdown-menu {
+  top: 2rem;
+  position: absolute;
+  background: #fff;
+  display: none;
+  padding: 0.5rem;
+}
+#navbar #nav-list .dropdown-menu:hover {
+  display: block;
+}
+#navbar #nav-list .dropdown-menu li {
+  width: max-content;
+}
+#navbar #nav-list .dropdown-menu li .nav-link {
+  padding-bottom: 0.5rem;
+  color: #333;
+}
+#navbar #nav-list .dropdown-menu li .nav-link:hover {
+  color: #629dff;
+}
 #navbar #nav-list .nav-link {
   font-size: 1rem;
   color: #e1e1e1;
@@ -287,14 +346,13 @@ main.soloPage {
   color: #e1e1e1;
   letter-spacing: 2%;
 }
-#navbar #nav-list .nav-link:hover::before {
-  content: " ";
-  display: block;
-  height: 3px;
-  background: #629dff;
-  position: absolute;
+#navbar #nav-list .nav-link:hover {
+  color: #629dff;
 }
 #navbar #nav-list .nav-link.active {
+  color: #629dff;
+}
+#navbar #nav-list .nav-link.active #dropdown-icon {
   color: #629dff;
 }
 #navbar #nav-list #btn-cotizar {
@@ -304,6 +362,38 @@ main.soloPage {
   color: #f1f1f1;
 }
 
+#mobile-nav {
+  display: none;
+  z-index: 999;
+  background: #0f121f;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.25rem 2rem;
+}
+#mobile-nav.active {
+  display: block;
+}
+#mobile-nav ul {
+  display: block;
+}
+#mobile-nav ul .dropdown-menu {
+  padding-left: 1.75rem;
+}
+#mobile-nav ul .dropdown-menu .nav-link {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+#mobile-nav ul .nav-link {
+  display: block;
+  color: #f1f1f1;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
 #footer {
   background: #0f121f;
   color: #e1e1e1;
@@ -311,6 +401,11 @@ main.soloPage {
 }
 #footer-brand {
   grid-column: 1/span 2;
+}
+@media (max-width: 39.9375em) {
+  #footer-brand {
+    grid-column: 1;
+  }
 }
 #footer-brand #brand {
   justify-content: flex-start;
@@ -328,6 +423,11 @@ main.soloPage {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
+}
+@media (max-width: 39.9375em) {
+  #footer-top {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 #footer-top .col h5 {
   font-size: 1.125rem;
@@ -362,7 +462,7 @@ main.soloPage {
 }
 
 #cta {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.3)), url("/img/galaxy.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)), url("/img/galaxy.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 2rem 0;
@@ -375,10 +475,20 @@ main.soloPage {
   letter-spacing: 0.06em;
   margin-bottom: 1rem;
 }
+@media (max-width: 39.9375em) {
+  #cta h2 {
+    font-size: 2.5rem;
+  }
+}
 #cta h3 {
   color: #e1e1e1;
   font-size: 1.75rem;
   font-weight: 500;
+}
+@media (max-width: 39.9375em) {
+  #cta h3 {
+    font-size: 1.4rem;
+  }
 }
 #cta h3 a {
   color: #629dff;
@@ -404,6 +514,11 @@ main.soloPage {
   height: auto;
   color: #fff;
 }
+@media (max-width: 39.9375em) {
+  #hero #arrow-wrapper svg {
+    width: 2.5rem;
+  }
+}
 #hero #copy {
   letter-spacing: 0.06em;
 }
@@ -414,12 +529,23 @@ main.soloPage {
   margin-bottom: 0.25rem;
   letter-spacing: 0.06em;
 }
+@media (max-width: 39.9375em) {
+  #hero #copy h1 {
+    font-size: 2.25rem;
+  }
+}
 #hero #copy h3 {
   color: #e1e1e1;
   font-size: 1.625rem;
   font-weight: 600;
   margin-bottom: 3rem;
   letter-spacing: 0.06em;
+}
+@media (max-width: 39.9375em) {
+  #hero #copy h3 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
 }
 #hero #copy #btn-cta {
   color: #f1f1f1;
@@ -429,7 +555,11 @@ main.soloPage {
   background: #629dff;
   font-size: 1.125rem;
   padding: 0.5rem 1.5rem;
-  margin-right: 1rem;
+}
+@media (max-width: 39.9375em) {
+  #hero #copy #btn-cta {
+    font-size: 1rem;
+  }
 }
 #hero #copy #btn-cta-secondary {
   letter-spacing: 0.06em;
@@ -541,45 +671,19 @@ main.soloPage {
   gap: 1rem;
 }
 #portfolio .responsive-3-grid .project {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.12);
   position: relative;
   overflow: hidden;
 }
-#portfolio .responsive-3-grid .project a {
-  width: 100%;
-  height: 100%;
+#portfolio .responsive-3-grid .project-wrapper {
+  z-index: 2;
   position: relative;
+  transition: transform ease-in-out 400ms;
 }
-#portfolio .responsive-3-grid .project a:hover .more-info {
-  opacity: 1;
-  visibility: visible;
-}
-#portfolio .responsive-3-grid .project a .more-info {
-  display: block;
-  top: -5.25rem;
-  width: 100%;
-  font-size: 1.5rem;
-  visibility: hidden;
-  position: absolute;
-  opacity: 0;
-  text-align: center;
-  color: #f1f1f1;
-  font-weight: 600;
-  text-decoration: underline;
+#portfolio .responsive-3-grid .project-wrapper:hover {
+  transform: scale(1.2);
 }
 #portfolio .responsive-3-grid .project img {
-  transition: all ease-in-out 350ms;
-}
-#portfolio .responsive-3-grid .project img::after {
-  width: 100%;
-  height: 100%;
-  background-color: red;
-  position: absolute;
-  z-index: 2;
-}
-#portfolio .responsive-3-grid .project img:hover {
-  transform: scale(1.2);
-  filter: grayscale(100%) blur(1px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.12);
 }
 
 #blogposts .responsive-3-grid {
@@ -641,8 +745,102 @@ main.soloPage {
   z-index: 2;
 }
 
+.service-faq .section-title {
+  grid-column: 1/span 2;
+  margin-bottom: 0;
+}
+
 .service-description {
   padding-bottom: 2rem;
   padding-top: 2rem;
   gap: 2rem;
+}
+.service-description_text p {
+  margin-bottom: 0;
+}
+.service-description_text h4 {
+  font-weight: 600;
+  color: #111;
+  font-size: 1.25rem;
+}
+
+.service-process {
+  background: #0f121f;
+  color: #e1e1e1;
+}
+.service-process .responsive-3-grid {
+  gap: 2rem;
+}
+.service-process .section-title {
+  color: #f1f1f1;
+}
+.service-process .step-header {
+  color: #f1f1f1;
+}
+.service-process .step-header .step-number {
+  font-weight: 700;
+  font-size: 2.5rem;
+  background: #629dff;
+  padding: 0 0.6rem;
+  margin-right: 0.25rem;
+}
+.service-process .step-header h4 {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.service-process li ul {
+  margin-top: 0.5rem;
+  list-style: square;
+  margin-left: 1rem;
+}
+
+.service-tech .tech-list li {
+  margin-right: 1.5rem;
+}
+
+#about-us {
+  padding-top: 1.5rem;
+}
+#about-us_left {
+  width: 50%;
+}
+#about-us_right {
+  width: 50%;
+  margin-left: 1.75rem;
+}
+#about-us_right h1 {
+  font-size: 2.5rem;
+  color: #629dff;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+#about-us_right p {
+  margin-bottom: 1rem;
+}
+
+#about-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 56rem;
+  padding-top: 1.5rem;
+}
+#about-features h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #111;
+}
+#about-features .card {
+  border: 1px solid #f1f1f1;
+  padding: 1rem;
+}
+#about-features ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+#about-features ul li {
+  margin-bottom: 0.75rem;
 }

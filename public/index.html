@@ -20,35 +20,81 @@
   <body>
     <div id="nav-wrapper" class="">
   <nav id="navbar" class="flex items-center justify-between">
-    <a href="" id="brand" class="flex-center">
+    <a href="/" id="brand" class="flex-center">
       <img src="/img/logo.svg" alt="">
       <span>xatal</span>
     </a>
-    <ul id="nav-list" class="flex items-center">
+    <ul id="nav-list" class="flex items-center mobile-hidden">
       <li>
-        <a href="/" class="nav-link active">Inicio</a>
+        <a href="/" class="nav-link  active ">Inicio</a>
+      </li>
+      <li class="flex-center dropdown">
+        <a href="#" class="nav-link ">
+          <span>Servicios</span>
+          <svg xmlns="http://www.w3.org/2000/svg" id="dropdown-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="/servicios/desarrollo-web" class="nav-link">Diseño y desarrollo web</a>
+          </li>
+          <li>
+            <a href="/servicios/tiendas-online" class="nav-link">Tiendas online</a>
+          </li>
+          <li>
+            <a href="/servicios/sistemas-administrativos" class="nav-link">Sistemas administrativos</a>
+          </li>
+        </ul>
       </li>
       <li>
-        <a href="" class="nav-link">Servicios</a>
+        <a href="/clientes/" class="nav-link ">Clientes</a>
       </li>
       <li>
-        <a href="" class="nav-link">Clientes</a>
+        <a href="/nosotros/" class="nav-link ">Nosotros</a>
       </li>
+      
       <li>
-        <a href="" class="nav-link">Nosotros</a>
+        <a href="" class="nav-link ">Contacto</a>
       </li>
-      <li>
-        <a href="" class="nav-link">Blog</a>
-      </li>
-      <li>
-        <a href="" class="nav-link">Contacto</a>
-      </li>
-      <li>
-        <a href="" class="nav-link" id="btn-cotizar">Cotizar</a>
-      </li>
+      
     </ul>
+    <i class='bx bx-menu' id="btn-burguer"></i>
   </nav>
 </div>
+
+<nav id="mobile-nav">
+  <ul id="mobile-nav-list" class="flex items-center">
+      <li>
+        <a href="/" class="nav-link  active ">Inicio</a>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="nav-link ">Servicios</a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="/servicios/desarrollo-web" class="nav-link">Diseño y desarrollo web</a>
+          </li>
+          <li>
+            <a href="/servicios/tiendas-online" class="nav-link">Tiendas online</a>
+          </li>
+          <li>
+            <a href="/servicios/sistemas-administrativos" class="nav-link">Sistemas administrativos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/clientes/" class="nav-link ">Clientes</a>
+      </li>
+      <li>
+        <a href="/nosotros/" class="nav-link ">Nosotros</a>
+      </li>
+      
+      <li>
+        <a href="" class="nav-link ">Contacto</a>
+      </li>
+      
+    </ul>
+</nav>
 
     <main class="">
       
@@ -58,11 +104,8 @@
     <h1>Pon tu negocio al <br class="mobile-hidden"> alcance de todos</h1>
     <h3>Nosotros lo llevamos al internet</h3>
     <div class="flex-center">
-      <a href="" id="btn-cta">Cotizar</a>
-      <a href="#services" id="btn-cta-secondary">
-        <span>Más información</span>
-        <i class="bx bx-info-circle"></i>
-      </a>
+      <a href="#services" id="btn-cta">Más información</a>
+      
     </div>
   </section>
   <a href="#services" id="arrow-wrapper" class="flex-center">
@@ -107,7 +150,7 @@
         <li>Diseño adaptable a dispositivos móviles</li>
         <li>Código QR de regalo</li>
       </ul>
-      <a href="/servicios/e-commerce/" class="more-info flex-center">
+      <a href="/servicios/tiendas-online/" class="more-info flex-center">
         <span>Más información</span>
         <svg xmlns="http://www.w3.org/2000/svg" class="more-info-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"/>
@@ -196,26 +239,30 @@
   <ul class="responsive-3-grid">
     <li class="project">
       <a href="">
-        <img src="https://www.xatalweb.com/static/assets/img/portfolio/vintage.png" alt="" class="object-cover">
-        <span class="more-info">Más información</span>
+        <div class="project-wrapper">
+          <img src="https://www.xatalweb.com/static/assets/img/portfolio/vintage.png" alt="" class="img-fluid">
+        </div>
       </a>
     </li>
     <li class="project">
       <a href="">
-        <img src="https://www.xatalweb.com/static/assets/img/portfolio/chevrolet.png" alt="" class="object-cover">
-        <span class="more-info">Más información</span>
+        <div class="project-wrapper">
+          <img src="https://www.xatalweb.com/static/assets/img/portfolio/chevrolet.png" alt="" class="img-fluid">
+        </div>
       </a>
     </li>
     <li class="project">
       <a href="">
-        <img src="https://www.xatalweb.com/static/assets/img/portfolio/hipocampus.png" alt="" class="object-cover">
-        <span class="more-info">Más información</span>
+        <div class="project-wrapper">
+          <img src="https://www.xatalweb.com/static/assets/img/portfolio/hipocampus.png" alt="" class="img-fluid">
+        </div>
       </a>
     </li>
     <li class="project">
       <a href="">
-        <img src="https://www.xatalweb.com/static/assets/img/portfolio/amigos.png" alt="" class="object-cover">
-        <span class="more-info">Más información</span>
+        <div class="project-wrapper">
+          <img src="https://www.xatalweb.com/static/assets/img/portfolio/amigos.png" alt="" class="img-fluid">
+        </div>
       </a>
     </li>
   </ul>
@@ -233,69 +280,7 @@
 </section>
 
 <!-- Blogposts -->
-<section id="blogposts" class="container">
-  <h2 class="section-title">Artículos recientes</h2>
-  <ul class="responsive-3-grid">
-    <li class="card">
-      <div class="post-img">
-        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80" alt="" class="object-cover">
-      </div>
-      <div class="post-body">
-        <span class="post-tag">Diseño web</span>
-        <span class="post-tag">Emprendimiento</span>
-        <h4>Importancia del diseño responsive</h4>
-        <div class="post-text">
-              Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem...
-        </div>
-        <a href="" class="read-more">
-          <span>Continuar leyendo</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="more-info-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"/>
-          </svg>
-        </svg>
-      </a>
-    </div>
-  </li>
-  <li class="card">
-    <div class="post-img">
-      <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80" alt="" class="object-cover">
-    </div>
-    <div class="post-body">
-      <span class="post-tag">Diseño web</span>
-      <span class="post-tag">Emprendimiento</span>
-      <h4>Importancia del diseño responsive</h4>
-      <div class="post-text">
-              Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem...
-      </div>
-      <a href="" class="read-more">
-        <span>Continuar leyendo</span>
-        <svg xmlns="http://www.w3.org/2000/svg" class="more-info-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"/>
-        </svg>
-      </a>
-    </div>
-  </li>
-  <li class="card">
-    <div class="post-img">
-      <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80" alt="" class="object-cover">
-    </div>
-    <div class="post-body">
-      <span class="post-tag">Diseño web</span>
-      <span class="post-tag">Emprendimiento</span>
-      <h4>Importancia del diseño responsive</h4>
-      <div class="post-text">
-              Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem...
-        </div>
-      <a href="" class="read-more">
-        <span>Continuar leyendo</span>
-        <svg xmlns="http://www.w3.org/2000/svg" class="more-info-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"/>
-        </svg>
-      </a>
-    </div>
-  </li>
-</ul>
-</section>
+
 
 <script>
 const navbar = document.getElementById('nav-wrapper')

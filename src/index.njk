@@ -1,6 +1,7 @@
 ---
 layout: 'base.njk'
 pageTitle: Xatal - Diseño y desarrollo web para empresas y profesionistas
+navActive: inicio
 ---
 
 <!-- Hero -->
@@ -9,11 +10,11 @@ pageTitle: Xatal - Diseño y desarrollo web para empresas y profesionistas
     <h1>Pon tu negocio al <br class="mobile-hidden"> alcance de todos</h1>
     <h3>Nosotros lo llevamos al internet</h3>
     <div class="flex-center">
-      <a href="" id="btn-cta">Cotizar</a>
-      <a href="#services" id="btn-cta-secondary">
+      <a href="#services" id="btn-cta">Más información</a>
+      {# <a href="#services" id="btn-cta-secondary">
         <span>Más información</span>
         <i class="bx bx-info-circle"></i>
-      </a>
+      </a> #}
     </div>
   </section>
   <a href="#services" id="arrow-wrapper" class="flex-center">
@@ -58,7 +59,7 @@ pageTitle: Xatal - Diseño y desarrollo web para empresas y profesionistas
         <li>Diseño adaptable a dispositivos móviles</li>
         <li>Código QR de regalo</li>
       </ul>
-      <a href="/servicios/e-commerce/" class="more-info flex-center">
+      <a href="/servicios/tiendas-online/" class="more-info flex-center">
         <span>Más información</span>
         <svg xmlns="http://www.w3.org/2000/svg" class="more-info-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"/>
@@ -147,26 +148,30 @@ pageTitle: Xatal - Diseño y desarrollo web para empresas y profesionistas
   <ul class="responsive-3-grid">
     <li class="project">
       <a href="">
-        <img src="https://www.xatalweb.com/static/assets/img/portfolio/vintage.png" alt="" class="object-cover">
-        <span class="more-info">Más información</span>
+        <div class="project-wrapper">
+          <img src="https://www.xatalweb.com/static/assets/img/portfolio/vintage.png" alt="" class="img-fluid">
+        </div>
       </a>
     </li>
     <li class="project">
       <a href="">
-        <img src="https://www.xatalweb.com/static/assets/img/portfolio/chevrolet.png" alt="" class="object-cover">
-        <span class="more-info">Más información</span>
+        <div class="project-wrapper">
+          <img src="https://www.xatalweb.com/static/assets/img/portfolio/chevrolet.png" alt="" class="img-fluid">
+        </div>
       </a>
     </li>
     <li class="project">
       <a href="">
-        <img src="https://www.xatalweb.com/static/assets/img/portfolio/hipocampus.png" alt="" class="object-cover">
-        <span class="more-info">Más información</span>
+        <div class="project-wrapper">
+          <img src="https://www.xatalweb.com/static/assets/img/portfolio/hipocampus.png" alt="" class="img-fluid">
+        </div>
       </a>
     </li>
     <li class="project">
       <a href="">
-        <img src="https://www.xatalweb.com/static/assets/img/portfolio/amigos.png" alt="" class="object-cover">
-        <span class="more-info">Más información</span>
+        <div class="project-wrapper">
+          <img src="https://www.xatalweb.com/static/assets/img/portfolio/amigos.png" alt="" class="img-fluid">
+        </div>
       </a>
     </li>
   </ul>
@@ -176,7 +181,7 @@ pageTitle: Xatal - Diseño y desarrollo web para empresas y profesionistas
 {% include "components/cta.njk" %}
 
 <!-- Blogposts -->
-<section id="blogposts" class="container">
+{# <section id="blogposts" class="container">
   <h2 class="section-title">Artículos recientes</h2>
   <ul class="responsive-3-grid">
     <li class="card">
@@ -238,7 +243,7 @@ pageTitle: Xatal - Diseño y desarrollo web para empresas y profesionistas
     </div>
   </li>
 </ul>
-</section>
+</section> #}
 
 <script>
 const navbar = document.getElementById('nav-wrapper')
