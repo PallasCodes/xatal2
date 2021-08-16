@@ -88,11 +88,38 @@ main.soloPage {
 // Responsive
 .mobile-hidden {
   @include breakpoint-down(small) {
-    display: none;
+    display: none!important;
+  }
+}
+
+.desktop-hidden {
+  @include breakpoint-up(medium) {
+    display: none!important;
   }
 }
 
 // Components
+.btn-primary {
+  color: #f1f1f1;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: $primary;
+  font-size: 1.125rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  line-height: 1;
+  transition: background ease 250ms;
+
+  &:hover {
+    background: $primaryDark;
+  }
+
+  @include breakpoint-down(small) {
+    font-size: 1rem;
+  }
+}
+
 .img-fluid {
   width: 100%;
   height: auto;

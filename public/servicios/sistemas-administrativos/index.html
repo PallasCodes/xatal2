@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiendas online | Xatal</title>
+    <title>Sistemas Web Administrativos | Xatal</title>
     <!-- styles -->
     <link rel="stylesheet" href="/css/styles.css">
     <!-- Google Fonts -->
@@ -55,16 +55,17 @@
       </li>
       
       <li>
-        <a href="" class="nav-link ">Contacto</a>
+        <a href="/contacto/" class="nav-link ">Contacto</a>
       </li>
       
     </ul>
-    <i class='bx bx-menu' id="btn-burguer"></i>
+    <i class="bx bx-menu desktop-hidden" id="btn-burguer"></i>
   </nav>
 </div>
 
-<nav id="mobile-nav">
-  <ul id="mobile-nav-list" class="flex items-center">
+<nav id="mobile-nav" class="desktop-hidden">
+  <ul id="mobile-nav-list" class="flex items-center" >
+      <i class='bx bxs-x-circle' id="btn-close"></i>
       <li>
         <a href="/" class="nav-link ">Inicio</a>
       </li>
@@ -99,7 +100,7 @@
     <main class="soloPage">
       
 <header class="soloPageTitle flex-center" 
-  style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)),url(https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)">
+  style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)),url(/img/management-sw.jpg)">
   <h1>Sistemas Web Administrativos</h1>
 </header>
 
@@ -152,7 +153,7 @@
        <li>
         <div class="step-header">
           <span class="step-number">1</span>
-          <h4>Análisis</h4>
+          <h4>Requerimientos</h4>
           <ul>
           <li>Te entrevistamos para conocer tus necesidades y tu negocio.</li>
           <li>Hacemos un análisis de páginas web de negocios del mismo rubro.</li>
@@ -162,7 +163,7 @@
        <li>
         <div class="step-header">
           <span class="step-number">1</span>
-          <h4>Análisis</h4>
+          <h4>Diseño del sistema</h4>
           <ul>
           <li>Te entrevistamos para conocer tus necesidades y tu negocio.</li>
           <li>Hacemos un análisis de páginas web de negocios del mismo rubro.</li>
@@ -172,7 +173,7 @@
       <li>
         <div class="step-header">
           <span class="step-number">1</span>
-          <h4>Análisis</h4>
+          <h4>Desarrollo y pruebas</h4>
           <ul>
           <li>Te entrevistamos para conocer tus necesidades y tu negocio.</li>
           <li>Hacemos un análisis de páginas web de negocios del mismo rubro.</li>
@@ -181,8 +182,8 @@
       </li>
        <li>
         <div class="step-header">
-          <span class="step-number">1</span>
-          <h4>Análisis</h4>
+          <span class="step-number">5</span>
+          <h4>Despliegue</h4>
           <ul>
           <li>Te entrevistamos para conocer tus necesidades y tu negocio.</li>
           <li>Hacemos un análisis de páginas web de negocios del mismo rubro.</li>
@@ -191,8 +192,8 @@
       </li>
        <li>
         <div class="step-header">
-          <span class="step-number">1</span>
-          <h4>Análisis</h4>
+          <span class="step-number">6</span>
+          <h4>Capacitación</h4>
           <ul>
           <li>Te entrevistamos para conocer tus necesidades y tu negocio.</li>
           <li>Hacemos un análisis de páginas web de negocios del mismo rubro.</li>
@@ -209,12 +210,6 @@
   <h2 class="section-title">Tecnologías que utilizamos</h2>
   <ul class="tech-list flex-center">
     <li>
-      <img src="/img/tecnologias/wordpress.png" alt="Logo Wordpress">
-    </li>
-    <li>
-      <img src="/img/tecnologias/elementor.png" alt="Logo Elementor">
-    </li>
-    <li>
       <img src="/img/tecnologias/figma.png" alt="Logo figma">
     </li>
     <li>
@@ -227,11 +222,15 @@
       <img src="/img/tecnologias/javascript.png" alt="Logo javascript">
     </li>
     <li>
-      <img src="/img/tecnologias/eleventy.png" alt="Logo eleventy">
+      <img src="/img/tecnologias/django.png" alt="Logo django">
     </li>
     <li>
-      <img src="/img/tecnologias/netlify.png" alt="Logo netlify">
+      <img src="/img/tecnologias/nodejs.png" alt="Logo nodejs">
     </li>
+    <li>
+      <img src="/img/tecnologias/vuejs.png" alt="Logo vuejs">
+    </li>
+    
   </ul>
 </section>
 <!-- end Service tech stack -->

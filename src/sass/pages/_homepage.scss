@@ -53,20 +53,6 @@
       }
     }
 
-    #btn-cta {
-      color: #f1f1f1;
-      font-weight: 600;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      background: $primary;
-      font-size: 1.125rem;
-      padding: 0.5rem 1.5rem;
-
-      @include breakpoint-down(small) {
-        font-size: 1rem;
-      }
-    }
-
     #btn-cta-secondary {
       letter-spacing: 0.06em;
       font-size: 1.125rem;

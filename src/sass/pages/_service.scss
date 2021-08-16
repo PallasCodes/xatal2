@@ -1,4 +1,5 @@
 .soloPageTitle {
+  padding: 0 0.5rem ;
   height: 16rem;
   overflow: hidden;
   position: relative;
@@ -6,6 +7,10 @@
   background-attachment: fixed !important;
   background-size: cover !important;
   background-position: bottom !important;
+
+  @include breakpoint-down(small) {
+    height: 13rem;
+  }
 
   h1 {
     color: #f1f1f1;
@@ -15,13 +20,26 @@
     text-align: center;
     margin: 0;
     z-index: 2;
+
+    @include breakpoint-down(small) {
+      font-size: 2.25rem;
+    }
   }
 }
 
 .service-faq {
+  @include breakpoint-down(small) {
+    padding-top: 0!important;
+  }
+
   .section-title {
     grid-column: 1 / span 2;
     margin-bottom: 0;
+
+    @include breakpoint-down(small) {
+      grid-column: 1;
+      margin-bottom: -2rem!important;
+    }
   }
 }
 
@@ -83,9 +101,14 @@
 
 .service-tech {
   .tech-list {
+    flex-wrap: wrap;
 
     li {
       margin-right: 1.5rem;
+
+      @include breakpoint-down(small) {
+        margin-bottom: 1.5rem;
+      }
     }
   }
 }

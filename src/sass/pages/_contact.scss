@@ -1,0 +1,90 @@
+#contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  justify-content: center;
+  padding-top: 2rem;
+
+  @include breakpoint-down(small) {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  #left {
+    h2 {
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      font-size: 2.25rem;
+      color: $darkGray;
+
+      @include breakpoint-down(small) {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 1.25rem;
+
+      @include breakpoint-down(small) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    #socials {
+      font-size: 2rem;
+
+      i {
+        background: $primary;
+        color: #f1f1f1;
+        padding: 0.3rem;
+        border-radius: 50%;
+        margin-right: 0.125rem;
+        transition: all ease-in 200ms;
+
+        &:hover {
+          background: $primaryDark;
+          color: #fff;
+          box-shadow: $shadowMd;
+        }
+      }
+    }
+  }
+}
+
+.form-control {
+  margin-bottom: 1.125rem;
+
+  label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  input, textarea {
+    min-width: 300px;
+    max-width: 400px;
+    width: 100%;
+    padding: 0.25rem;
+    border-radius: 0.3rem;
+    border: 2px solid #777;
+  }
+
+  textarea {
+    resize: none;
+  }
+}
+
+form {
+  button {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    min-width: 300px;
+    outline: none;
+    border: none;
+  }
+}
