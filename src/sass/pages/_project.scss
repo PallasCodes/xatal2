@@ -1,0 +1,69 @@
+.full-project {
+  .flex {
+    @include breakpoint-down(small) {
+      flex-direction: column;
+    }
+  }
+
+  .section-title {
+    margin-top: 0;
+    margin-bottom: 3.5rem;
+  }
+
+  &-img {
+    margin-right: 2rem;
+
+    @include breakpoint-down(small) {
+      margin-right: 0;
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  &-description {
+    strong {
+      font-weight: 600;
+    }
+
+    .project-link {
+      margin-top: 0.75rem;
+      color: $primary;
+      font-weight: 600;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+
+      &:hover span {
+        text-decoration: underline;
+      }
+
+      i {
+        font-size: 1.32rem;
+        margin-left: 0.25rem;
+      }
+    }
+
+    .line {
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+    }
+
+    .description {
+      margin-top: 1.1rem;
+
+      p {
+        margin-bottom: 0.5rem;
+      }
+
+      ul {
+        list-style: square;
+        padding-left: 1.25rem;
+      }
+
+      h3 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}

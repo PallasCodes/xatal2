@@ -1,0 +1,31 @@
+---
+layout: 'base.njk'
+soloPage: true
+navactive: clientes
+---
+
+
+<section class="full-project container">
+<h2 class="section-title">{{title}}</h2>
+  <div class="flex">
+    <div class="full-project-img">
+      <img src="{{img}}" class="img-fluid">
+    </div>
+    <div class="full-project-description">
+    <div>
+      <div class="line">
+        <strong>Categoría: </strong> <span>{{ category }}</span>
+      </div>
+      <div class="line">
+        <strong>Cliente: </strong> <span>{{ client }}</span>
+      </div>
+    </div>
+      <div class="description">
+        {{ content | safe }}
+      </div>
+      <a href="{{projectLink}}" target="_blank" class="project-link">
+        <span>Ver sitio web</span> <i class='bx bx-link'></i>
+      </a> 
+    </div>
+  </div>
+</section>

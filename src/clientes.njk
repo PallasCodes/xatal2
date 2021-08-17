@@ -8,33 +8,14 @@ navActive: clientes
 <section id="portfolio" class="container">
   <h2 class="section-title">Proyectos que hemos realizado</h2>
   <ul class="responsive-3-grid">
+  {% for client in collections.cliente %}
     <li class="project">
-      <a href="">
+      <a href="{{client.url}}">
         <div class="project-wrapper">
-          <img src="https://www.xatalweb.com/static/assets/img/portfolio/vintage.png" alt="Captura de pantalla de sitio web de Vintage Rock Band" class="img-fluid">
+          <img src="{{client.data.img}}" alt="Captura de pantalla de sitio web de Vintage Rock Band" class="img-fluid">
         </div>
       </a>
     </li>
-    <li class="project">
-      <a href="">
-        <div class="project-wrapper">
-          <img src="https://www.xatalweb.com/static/assets/img/portfolio/chevrolet.png" alt="Captura de pantalla de sitio webd e Jorge Torres" class="img-fluid">
-        </div>
-      </a>
-    </li>
-    <li class="project">
-      <a href="">
-        <div class="project-wrapper">
-          <img src="https://www.xatalweb.com/static/assets/img/portfolio/hipocampus.png" alt="Captura de pantalla de sitio web de salón de eventos Hipocampus" class="img-fluid">
-        </div>
-      </a>
-    </li>
-    <li class="project">
-      <a href="">
-        <div class="project-wrapper">
-          <img src="https://www.xatalweb.com/static/assets/img/portfolio/amigos.png" alt="Captura de pantalla de sitio web de Amigos de los Animales" class="img-fluid">
-        </div>
-      </a>
-    </li>
+  {% endfor %}
   </ul>
 </section> 
