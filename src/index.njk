@@ -35,17 +35,12 @@ navActive: inicio
       </svg>
       <h4>Diseño y desarrollo de páginas web</h4>
       <ul>
-        <li>Genera mayor confianza y profesionalismo con tus clientes</li>
+        <li>Genera mayor confianza con tus clientes</li>
         <li>Gestiona el contenido de tu página tú mismo</li>
         <li>Diseño adaptable a dispositivos móviles</li>
         <li>Código QR de regalo</li>
       </ul>
-      <a href="/servicios/desarrollo-web/" class="more-info flex-center">
-        <span>Más información</span>
-        <svg xmlns="http://www.w3.org/2000/svg" class="more-info-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"/>
-        </svg>
-      </a>
+      <a href="/servicios/desarrollo-web/" class="btn-sm-primary">Más información</a>
     </li>
     <li class="card" data-aos="fade-up" data-aos-duration="800" data-aos-easing="linear">
       <svg xmlns="http://www.w3.org/2000/svg" class="service-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -59,12 +54,7 @@ navActive: inicio
         <li>Diseño adaptable a dispositivos móviles</li>
         <li>Código QR de regalo</li>
       </ul>
-      <a href="/servicios/tiendas-online/" class="more-info flex-center">
-        <span>Más información</span>
-        <svg xmlns="http://www.w3.org/2000/svg" class="more-info-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"/>
-        </svg>
-      </a>
+      <a href="/servicios/tiendas-online/" class="btn-sm-primary">Más información</a>
     </li>
     <li class="card" data-aos="fade-up" data-aos-duration="800" data-aos-easing="linear">
       <svg xmlns="http://www.w3.org/2000/svg" class="service-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -77,12 +67,7 @@ navActive: inicio
         <li>Automatiza procesos </li>
         <li>Gestiona tu negocio desde cualquier lugar en cualquier dispositivo</li>
       </ul>
-      <a href="/servicios/sistemas-administrativos/" class="more-info flex-center">
-        <span>Más información</span>
-        <svg xmlns="http://www.w3.org/2000/svg" class="more-info-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"/>
-        </svg>
-      </a>
+      <a href="/servicios/sistemas-administrativos/" class="btn-sm-primary">Más información</a>
     </li>
   </ul>
 </section>
@@ -148,7 +133,7 @@ navActive: inicio
   <ul class="responsive-3-grid">
     {% for client in collections.cliente %}
       {% if client.data.best %}
-        <li class="project">
+        <li class="project" data-aos="flip-left" data-aos-duration="450" data-aos-easing="linear">
           <a href="{{client.url}}">
             <div class="project-wrapper">
               <img src="{{client.data.img}}" alt="Captura de pantalla de sitio web de Vintage Rock Band" class="img-fluid">

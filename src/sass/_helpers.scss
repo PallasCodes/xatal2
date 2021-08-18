@@ -99,6 +99,43 @@ main.soloPage {
 }
 
 // Components
+#faq-maintitle::after {
+  margin-bottom: 0;
+}
+
+.btn-sm-primary {
+  background: $primary;
+  font-size: 1.125rem;
+  padding: 0.5rem 1rem;
+  color: #f1f1f1;
+  font-weight: 500;
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  display: block;
+  line-height: 1;
+  transition: background ease-in 150ms;
+
+  &:hover {
+    background: $primaryDark;
+  }
+}
+
+.faq-title {
+  margin-top: 1.5rem;
+  grid-column: 1 / span 2;
+  font-size: 1.65rem;
+  font-weight: 600;
+  color: $darkGray;
+  letter-spacing: 0.04em;
+  color: $primaryDark;
+  margin-bottom: -1rem;
+
+  @include breakpoint-down(small) {
+    grid-column: 1;
+  }
+}
+
 .btn-primary {
   color: #f1f1f1;
   font-weight: 600;

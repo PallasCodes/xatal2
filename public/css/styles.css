@@ -233,6 +233,43 @@ main.soloPage {
   }
 }
 
+#faq-maintitle::after {
+  margin-bottom: 0;
+}
+
+.btn-sm-primary {
+  background: #629dff;
+  font-size: 1.125rem;
+  padding: 0.5rem 1rem;
+  color: #f1f1f1;
+  font-weight: 500;
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  display: block;
+  line-height: 1;
+  transition: background ease-in 150ms;
+}
+.btn-sm-primary:hover {
+  background: #3586ff;
+}
+
+.faq-title {
+  margin-top: 1.5rem;
+  grid-column: 1/span 2;
+  font-size: 1.65rem;
+  font-weight: 600;
+  color: #111;
+  letter-spacing: 0.04em;
+  color: #3586ff;
+  margin-bottom: -1rem;
+}
+@media (max-width: 39.9375em) {
+  .faq-title {
+    grid-column: 1;
+  }
+}
+
 .btn-primary {
   color: #f1f1f1;
   font-weight: 600;

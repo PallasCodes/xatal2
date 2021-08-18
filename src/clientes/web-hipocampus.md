@@ -1,16 +1,19 @@
 ---
-img: https://www.xatalweb.com/static/assets/img/portfolio/vintage.png
-title: Página web de Vintage
-projectTitle: 
-category: Página informativa
-client: Vintage Rock Band
+img: https://www.xatalweb.com/static/assets/img/portfolio/hipocampus.png
+title: Página web de Hipocampus
+category: Landing Page
+client: Salón de eventos Hipocampus
 best: true
-projectLink: https://grupovintage.tk
+projectLink: https://hipocampus.tk
+pageTitle: Página web de Hipocampus
 ---
 
-Vintage es un grupo de rock en español formado por los hermanos Torres en Apizaco, Tlaxcala. Les construimos una página web para promorcionar a la banda y para ofrecer más información de los integrantes y sus eventos.
+Hipocampus es un salón de eventos ubicado en Veracruz, el cual suele ser rentado para fiestas familiares.
+
+Trabajamos con Hipocampus en rediseñar su página web y presencia digital, mediante un sitio que muestra toda la información del negocio con un diseño profesional.
 
 ### Características
 
 * Diseño móvil adaptable
 * Diseño personalizado 
+* Optimización de SEO
