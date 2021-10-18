@@ -1,5 +1,6 @@
 ---
 img: /img/portfolio/chevrolet.png
+thumbnail: /img/portfolio/thumbnail/chevrolet.png
 title: Página web de Jorge Torres
 category: Landing Page
 client: Jorge Torres

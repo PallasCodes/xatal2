@@ -1,5 +1,6 @@
 ---
 img: /img/portfolio/hipocampus.png
+thumbnail: /img/portfolio/thumbnail/hipocampus.png
 title: Página web de Hipocampus
 category: Landing Page
 client: Salón de eventos Hipocampus

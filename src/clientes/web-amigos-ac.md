@@ -1,5 +1,6 @@
 ---
 img: /img/portfolio/amigos.png
+thumbnail: /img/portfolio/thumbnail/amigos.png
 title: Página web de Amigos de los Animales
 category: Página informativa
 client: Amigos de los Animales

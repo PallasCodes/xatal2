@@ -1,5 +1,6 @@
 ---
 img: /img/portfolio/vintage.png
+thumbnail: /img/portfolio/thumbnail/vintage.png
 title: Página web de Vintage
 category: Página informativa
 client: Vintage Rock Band
