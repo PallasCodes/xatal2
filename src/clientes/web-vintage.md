@@ -1,5 +1,5 @@
 ---
-img: https://www.xatalweb.com/static/assets/img/portfolio/vintage.png
+img: /img/portfolio/vintage.png
 title: Página web de Vintage
 category: Página informativa
 client: Vintage Rock Band

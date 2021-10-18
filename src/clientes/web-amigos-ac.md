@@ -1,5 +1,5 @@
 ---
-img: https://www.xatalweb.com/static/assets/img/portfolio/amigos.png
+img: /img/portfolio/amigos.png
 title: Página web de Amigos de los Animales
 category: Página informativa
 client: Amigos de los Animales

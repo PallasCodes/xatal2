@@ -1,5 +1,5 @@
 ---
-img: https://www.xatalweb.com/static/assets/img/portfolio/chevrolet.png
+img: /img/portfolio/chevrolet.png
 title: Página web de Jorge Torres
 category: Landing Page
 client: Jorge Torres

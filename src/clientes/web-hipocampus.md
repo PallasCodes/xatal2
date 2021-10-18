@@ -1,5 +1,5 @@
 ---
-img: https://www.xatalweb.com/static/assets/img/portfolio/hipocampus.png
+img: /img/portfolio/hipocampus.png
 title: Página web de Hipocampus
 category: Landing Page
 client: Salón de eventos Hipocampus
