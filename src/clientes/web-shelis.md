@@ -5,7 +5,7 @@ title: Página web de Pastelería Sheliss
 category: Catálogo en línea
 client: Pastelería Sheliss
 best: true
-projectLink: https://sheliss-pasteleria.ml
+projectLink: https://pasteleria-sheliss.ml
 pageTitle: Página web de Sheliss
 ---
 
