@@ -212,25 +212,3 @@ navActive: inicio
   </li>
 </ul>
 </section> #}
-
-<script>
-const navbar = document.getElementById('nav-wrapper')
-
-function toggleNavbar() {
-  if (window.scrollY > 100) {
-    navbar
-      .classList
-      .add('active')
-  } else {
-    navbar
-      .classList
-      .remove('active')
-  }
-}
-
-window.addEventListener('scroll', () => {
-  toggleNavbar()
-})
-
-toggleNavbar()
-</script>

@@ -1,16 +1,32 @@
 #nav-wrapper {
   max-width: 87.5rem;
-  margin: 0 auto;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
+  margin: 0 auto;
   z-index: 10;
 
   &.active {
+    position: sticky;
     background-color: $darkBlue;
-    transition: all ease-in-out 450ms;
+    animation: slide 420ms;
+    transition: all ease-in-out 725ms;
     box-shadow: $shadowMd;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  75% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
   }
 }
 
@@ -31,6 +47,7 @@
 }
 
 #navbar {
+  flex-wrap: wrap;
   padding: 0.75rem 1.25rem;
 
   #nav-list {
@@ -90,7 +107,7 @@
       color: #e1e1e1;
       letter-spacing: 2%;
 
-      &:hover{
+      &:hover {
         color: $primary;
       }
 
@@ -100,6 +117,18 @@
         #dropdown-icon {
           color: $primary;
         }
+      }
+    }
+
+    @keyframes slideY {
+      0% {
+        height: 0;
+      }
+      55% {
+        height: 60vh;
+      }
+      100% {
+        height: calc(100vh - 56px);
       }
     }
 
@@ -113,18 +142,34 @@
 }
 
 #mobile-nav {
+  overflow-y: hidden;
+  border-top: 2px solid #f1f1f1;
   display: none;
-  z-index: 999;
-  background: $darkBlue;
-  position: fixed;
-  top: 0;
-  bottom: 0;
+  position: absolute;
+  top: 56px;
   left: 0;
   right: 0;
+  z-index: 8;
+  background: $darkBlue;
+  height: calc(100vh - 56px);
   padding: 1.25rem 2rem;
 
   &.active {
     display: block;
+    animation: slideY 725ms;
+  }
+
+  &.unActive {
+    animation: unslideY 725ms;
+  }
+
+  @keyframes unslideY {
+    0% {
+      height: calc(100vh - 56px);
+    }
+    100% {
+      height: 0;
+    }
   }
 
   ul {
@@ -139,18 +184,19 @@
         margin-bottom: 0.25rem;
       }
     }
-    
+
     .nav-link {
       display: block;
       color: #f1f1f1;
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       font-weight: 500;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.8rem;
     }
   }
 }
 
-#btn-burguer, #btn-close {
+#btn-burguer,
+#btn-close {
   color: #f1f1f1;
   font-size: 2rem;
 }
