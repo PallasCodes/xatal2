@@ -1,12 +1,28 @@
 // HERO
 #hero {
   height: 100vh;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)),
     url("/img/hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+
+
+  #btns {
+    #cotizar {
+      margin-right: 1rem;
+
+      @include breakpoint-down(small) {
+        margin-right: 0;
+        margin-bottom: 1.25rem;
+      }
+    }
+
+    @include breakpoint-down(small) {
+      flex-direction: column;
+    }
+  }
 
   #arrow-wrapper {
     width: 100%;
