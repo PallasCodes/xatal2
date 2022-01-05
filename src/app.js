@@ -33,3 +33,24 @@ window.addEventListener("scroll", () => {
 });
 
 toggleNavbar();
+
+// BUDGET CALCULATOR
+const btnsNext = document.querySelectorAll(".btnNext");
+const stepsWrapper = document.getElementById("steps-wrapper");
+const stepBtns = document.querySelectorAll(".stepBtn");
+
+let translateX = 0;
+
+btnsNext.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    translateX += 100;
+    stepsWrapper.style.transform = `translateX(-${translateX}%)`;
+  });
+});
+
+stepBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    translateX = parseInt(btn.dataset.number)
+    stepsWrapper.style.transform = `translateX(-${translateX}%)`;
+  });
+});

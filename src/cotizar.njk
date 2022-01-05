@@ -1,0 +1,40 @@
+---
+layout: "base.njk"
+pageTitle: Cotizar proyecto | Xatal
+soloPage: true
+navActive: cotizar
+---
+
+<header
+  class="soloPageTitle flex-center"
+  style="
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)),
+      url(/img/web-design.jpg);
+  "
+>
+  <h1>Cotizar proyecto</h1>
+</header>
+
+<section id="budget">
+  <nav id="steps">
+    <ol>
+      <li><button data-number="0" class="stepBtn">1</button></li>
+      <li><button data-number="100" class="stepBtn">2</button></li>
+      <li><button data-number="200" class="stepBtn">3</button></li>
+    </ol>
+  </nav>
+  <div id="steps-wrapper">
+    <div class="step">
+      <h2>¿Necesitas un sitio gestionable?</h2>
+      <button class="btnNext bg-blue-500">Siguiente</button>
+    </div>
+    <div class="step">
+      <h2>¿Necesitas pagos en línea?</h2>
+      <button class="btnNext">Siguiente</button>
+    </div>
+    <div class="step">
+      <h2>¿Necesitas un catálogo?</h2>
+      <button class="btnNext">Siguiente</button>
+    </div>
+  </div>
+</section>

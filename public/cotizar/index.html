@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Cotizar proyecto | Xatal</title>
     <link rel="icon" type="image/x-icon" href="/img/favicon.png">
     <!-- styles -->
     <link rel="stylesheet" href="/css/styles.css">
@@ -62,7 +62,7 @@
       </li>
       
       <li>
-        <a href="/contacto/" class="nav-link  active ">Contacto</a>
+        <a href="/contacto/" class="nav-link ">Contacto</a>
       </li>
       
     </ul>
@@ -90,7 +90,7 @@
           </li>
           
           <li>
-            <a href="/contacto/" class="nav-link  active ">Contacto</a>
+            <a href="/contacto/" class="nav-link ">Contacto</a>
           </li>
           
         </ul>
@@ -102,58 +102,40 @@
 
     <main class="soloPage">
       
-<section id="contact" class="container">
-  <div id="left">
-    <h2>Contáctanos</h2>
-    <p>Con gusto te resolveremos tus dudas. También puedes contactarnos mediante nuestras redes sociales y otros medios.</p>
-    <div id="socials">
-    <a href="https://www.facebook.com/xatalweb" target="_blank">
-      <i class='bx bxl-facebook'></i>
-    </a>
-    <a href="https://www.instagram.com/xatalweb" target="_blank">
-      <i class='bx bxl-instagram'></i>
-    </a>
-    <a href="https://api.whatsapp.com/send?phone=5569002357&app" target="_blank">
-      <i class='bx bxl-whatsapp'></i>
-    </a>
-    <a href="mailto:xatalweb@gmail.com" target="_blank">
-      <i class='bx bx-envelope'></i>
-    </a>
+<header
+  class="soloPageTitle flex-center"
+  style="
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)),
+      url(/img/web-design.jpg);
+  "
+>
+  <h1>Cotizar proyecto</h1>
+</header>
+
+<section id="budget">
+  <nav id="steps">
+    <ol>
+      <li><button data-number="0" class="stepBtn">1</button></li>
+      <li><button data-number="100" class="stepBtn">2</button></li>
+      <li><button data-number="200" class="stepBtn">3</button></li>
+    </ol>
+  </nav>
+  <div id="steps-wrapper">
+    <div class="step">
+      <h2>¿Necesitas un sitio gestionable?</h2>
+      <button class="btnNext bg-blue-500">Siguiente</button>
+    </div>
+    <div class="step">
+      <h2>¿Necesitas pagos en línea?</h2>
+      <button class="btnNext">Siguiente</button>
+    </div>
+    <div class="step">
+      <h2>¿Necesitas un catálogo?</h2>
+      <button class="btnNext">Siguiente</button>
     </div>
   </div>
-
-  <div id="right">
-    <form action="">
-      <div class="form-control">
-        <label for="name">Nombre: </label>
-        <input type="text" name="name">
-      </div>
-      <div class="form-control">
-        <label for="email">Correo: </label>
-        <input type="email" name="email">
-      </div>
-      <div class="form-control">
-        <label for="subject">Asunto: </label>
-        <input type="text" name="subject">
-      </div>
-      <div class="form-control">
-        <label for="subject">Mensaje: </label>
-        <textarea rows="5" name="message"></textarea>
-      </div>
-      <button type="submit" class="btn-primary">Enviar</button>
-    </form>
-  </div>
 </section>
 
-<section id="cta" class="text-center">
-  <div class="container">
-    <h2>¿Dudas?</h2>
-    <h3>
-    Consulta nuestra sección de <a href="/preguntas-frecuentes/">preguntas frecuentes</a>  
-    o envíanos un mensaje directo <a href="/contacto/">aquí</a>.
-  </h3>
-  </div>
-</section>
     </main>
 
     <footer id="footer">
