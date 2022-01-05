@@ -234,7 +234,10 @@ a:hover {
 }
 
 .btn-sm-primary {
-  background: #629dff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #3586ff;
   font-size: 1.125rem;
   padding: 0.5rem 1rem;
   color: #f1f1f1;
@@ -245,9 +248,10 @@ a:hover {
   display: block;
   line-height: 1;
   transition: background ease-in 150ms;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.12);
 }
 .btn-sm-primary:hover {
-  background: #3586ff;
+  background: #629dff;
 }
 
 .faq-title {
@@ -266,12 +270,39 @@ a:hover {
   }
 }
 
-.btn-primary {
+.btn-secondary {
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.12);
   color: #f1f1f1;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background: #629dff;
+  background: #999;
+  font-size: 1.125rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  line-height: 1;
+  transition: background ease 250ms;
+}
+.btn-secondary:hover {
+  background: #b1b1b1;
+}
+@media (max-width: 39.9375em) {
+  .btn-secondary {
+    font-size: 1rem;
+  }
+}
+
+.btn-primary {
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.12);
+  color: #f1f1f1;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: #3586ff;
   font-size: 1.125rem;
   padding: 0.5rem 1.5rem;
   cursor: pointer;
@@ -279,7 +310,7 @@ a:hover {
   transition: background ease 250ms;
 }
 .btn-primary:hover {
-  background: #3586ff;
+  background: #629dff;
 }
 @media (max-width: 39.9375em) {
   .btn-primary {
@@ -1113,21 +1144,29 @@ form button {
   overflow: hidden;
   padding: 1.5rem;
 }
+@media (max-width: 39.9375em) {
+  #budget {
+    padding: 1.5rem 0;
+  }
+}
 #budget #steps ol {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-#budget #steps ol li {
-  margin-right: 0.75rem;
+#budget #steps ol span {
+  height: 3px;
+  width: 1.5rem;
+  background-color: #999;
 }
 #budget #steps ol li button {
   background: #629dff;
-  height: 2rem;
-  width: 2rem;
+  height: 1.75rem;
+  width: 1.75rem;
   border-radius: 50%;
-  color: #f1f1f1;
-  font-size: 1.25rem;
-  font-weight: 700;
+  color: #eee;
+  font-size: 1.15rem;
+  font-weight: 600;
   border: none;
   outline: none;
   cursor: pointer;
@@ -1137,6 +1176,8 @@ form button {
   background: #3586ff;
 }
 #budget #steps-wrapper {
+  left: 0;
+  right: 0;
   display: flex;
   transition: transform 500ms ease;
   padding: 6rem 0;
@@ -1144,6 +1185,14 @@ form button {
 #budget #steps-wrapper .step {
   min-width: 100%;
   height: 100%;
+}
+@media (max-width: 39.9375em) {
+  #budget #steps-wrapper .step {
+    padding: 0 0.75rem;
+  }
+}
+#budget #steps-wrapper .step button {
+  margin-right: 6px;
 }
 #budget #steps-wrapper .step h2 {
   margin-top: 2rem;

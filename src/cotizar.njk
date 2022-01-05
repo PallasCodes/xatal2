@@ -19,22 +19,61 @@ navActive: cotizar
   <nav id="steps">
     <ol>
       <li><button data-number="0" class="stepBtn">1</button></li>
+      <span></span>
       <li><button data-number="100" class="stepBtn">2</button></li>
+      <span></span>
       <li><button data-number="200" class="stepBtn">3</button></li>
+      <span></span>
+      <li><button data-number="300" class="stepBtn">4</button></li>
+      <span></span>
+      <li><button data-number="400" class="stepBtn">5</button></li>
+      <span></span>
+      <li><button data-number="500" class="stepBtn">6</button></li>
     </ol>
   </nav>
   <div id="steps-wrapper">
     <div class="step">
+      <h2>¿Deseas un diseño a la medida o basado en una plantilla?</h2>
+      <p>Las plantillas son diseños ya preestablecidos que permiten modificaciones menores como la paleta de colores y fuentes</p>
+      <button class="btnNext btn-primary" id="template">Plantilla</button>
+      <button class="btnNext btn-primary" id="custom">A la medida</button>
+    </div>
+    <div class="step">
       <h2>¿Necesitas un sitio gestionable?</h2>
-      <button class="btnNext bg-blue-500">Siguiente</button>
+      <p>Un sitio gestionable te permite modificarlo tú mismo sin depender de un programador o experto</p>
+      <button class="btnNext btn-primary" id="noManageable">No</button>
+      <button class="btnNext btn-primary" id="manageable">Si</button>
     </div>
     <div class="step">
-      <h2>¿Necesitas pagos en línea?</h2>
-      <button class="btnNext">Siguiente</button>
+      <h2>¿Necesitas pagos en línea (tienda en línea)?</h2>
+      <button class="btnNext btn-primary" id="noPayments">No</button>
+      <button class="btnNext btn-primary" id="payments">Si</button>
     </div>
     <div class="step">
-      <h2>¿Necesitas un catálogo?</h2>
-      <button class="btnNext">Siguiente</button>
+      <h2>¿Necesitas un catálogo de productos?</h2>
+      <button class="btnNext btn-primary" id="noCatalog">No</button>
+      <button class="btnNext btn-primary" id="catalog">Si</button>
+    </div>
+    <div class="step">
+      <h2>¿Cuántas páginas internas necesita tu sitio web?</h2>
+      <p>Por ejemplo: inicio, sobre nosotros, contacto</p>
+      <button class="btnNext btn-primary" id="pages1">1</button>
+      <button class="btnNext btn-primary" id="pages3">2-3</button>
+      <button class="btnNext btn-primary" id="pages5">4-5</button>
+      <button class="btnNext btn-primary" id="pages6">6+</button>
+    </div>
+    <div class="step">
+      <h2>¿Necesitas función de blog?</h2>
+      <p>Un blog te permite escribir artículos que pueden atraer clientes mediante búsquedas de Google</p>
+      <button class="btnFinish btnNext btn-primary" id="noBlog">No</button>
+      <button class="btnFinish btnNext btn-primary" id="blog">Si</button>
+    </div>
+    <div class="step">
+      <h2>El precio apróximado es de: <strong id="cost"></strong></h2>
+      <p>* El precio incluye hosting y dominio por un año</p>
+      <p>* El precio final depende de los requerimientos específicos</p>
+      <br>
+      <a href="/contacto" class="btn-primary">Ponerse en contacto</a>
     </div>
   </div>
 </section>
