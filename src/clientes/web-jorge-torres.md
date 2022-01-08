@@ -5,7 +5,7 @@ title: Página web de Jorge Torres
 category: Landing Page
 client: Jorge Torres
 best: true
-projectLink: https://cheroletjorge.tk
+projectLink: https://chevroletjorge.tk
 pageTitle: Página web de Jorge Torres
 ---
 
